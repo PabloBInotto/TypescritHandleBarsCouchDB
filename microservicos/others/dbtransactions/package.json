@@ -1,0 +1,19 @@
+{
+    "name": "dbtransactions",
+    "version": "0.0.1",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc --build && ts-project-bundle --out=build",
+        "start": "NODE_ENV=production node dist/server.js",
+        "dev": "rimraf **/tsconfig.tsbuildinfo && NODE_ENV=development tsc-watch -b --onSuccess 'node --inspect=3000 dist/server.js'"
+    },
+    "devDependencies": {
+        "@tsconfig/node16": "^1.0.3",
+        "@types/node": "^18.0.0",
+        "ts-project-bundle": "^0.0.10",
+        "typescript": "^4.7.3"
+    },
+    "dependencies": {
+        "nano": "^10.1.2"
+    }
+}

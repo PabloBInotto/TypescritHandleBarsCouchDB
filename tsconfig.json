@@ -1,0 +1,18 @@
+{ 
+  "extends": "@tsconfig/node16/tsconfig.json",
+  "compilerOptions": {
+    "sourceMap": true,
+    "rootDir": "./src",
+    "outDir": "./dist",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "incremental": true,
+    "disableSourceOfProjectReferenceRedirect": true,
+  },
+  "include": ["src/**/*.ts", "src/**/*.js"],
+  "exclude": ["node_modules", "build/**/*", "dist/**/*", "**/*.test.ts"],
+  "references": [
+    { "path": "microservicos/read" },
+  ]
+}

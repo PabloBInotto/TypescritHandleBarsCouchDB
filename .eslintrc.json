@@ -1,0 +1,29 @@
+{
+    "extends": [ 
+      "airbnb-base", "airbnb-typescript/base"
+    ],
+    "parserOptions": {
+      "projectFolderIgnoreList": ["**/node_modules/**", "**/dist/**", "**/build/**"]
+    },
+    "ignorePatterns": [
+      "**/node_modules/**",
+      "**/e2e/**",
+      "**/dist/**",
+      "**/build/**"
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-restricted-syntax": "off",
+      "import/no-relative-packages": "off",
+      "no-use-before-define": "off",
+      "@typescript-eslint/no-use-before-define": "off",
+      "no-unused-vars": "off",
+      "max-len": "off",
+      "linebreak-style": 0,
+      "no-param-reassign": [2, { "props": false }],
+      "no-shadow": "off",
+      "@typescript-eslint/no-shadow": ["error"],
+      "no-continue": "off",
+      "no-labels": "off"
+    }
+  }
