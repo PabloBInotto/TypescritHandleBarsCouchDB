@@ -1,0 +1,41 @@
+<div class="container mt-3">
+<h2 id="page_title">Home page</h2>
+<p>Insert a new register</p>
+    <form action="/insert" method="post">
+        <div class="mb-3 mt-3">
+            <label for="name" class="form-label">Name:</label>
+            <input type="name" class="form-control" id="name" placeholder="Type your name" name="name">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="age" class="form-label">Age:</label>
+            <input type="age" class="form-control" id="age" placeholder="Your age" name="age">
+        </div>
+        <div class="mb-3 mt-3">
+            <label for="nice" class="form-label">Are you nice?</label>
+            <select class="form-select" name="nice">
+                <option value="true">True</option>
+                <option value="false">False</option>
+            </select>
+        </div>
+        <div class="mb-3 mt-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+    </form>
+</div>
+<div class="container mt-3">
+    <div id="root"></div>
+</div>
+
+<script>
+    let d;
+    const ref = window.location.href.toString().split('/').pop()
+    if(ref === 'insert') {
+        d = {{{ return }}};
+    } else {
+        d = undefined;
+    }
+</script>

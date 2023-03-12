@@ -1,0 +1,1 @@
+DB_HOST_AUTH='http://admin:couchdb@localhost:5984'
